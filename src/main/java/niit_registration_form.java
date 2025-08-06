@@ -224,7 +224,7 @@ public class niit_registration_form extends javax.swing.JFrame {
         try{
         String query = "INSERT INTO `niit_registration_form`(`firstname`, `lastname`, `gender`, `role`, `username`,`password`) VALUES (?, ?, ?, ?, ?, ?)";
                                         //use this line of code for mysql in xamp "jdbc:mysql://127.0.0.1:3306/user_registeration_database","root",""
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/niit_app","root","Kenny4640");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/niit_app","root","******");
             pst = con.prepareStatement(query);
             pst.setString(1, firstname.getText());
             pst.setString(2, lastname.getText());
