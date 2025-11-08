@@ -211,7 +211,7 @@ public class student_details extends javax.swing.JFrame {
         try{
         String query = "INSERT INTO `niit_student_details`(`firstName`, `lastName`, `gender`, `course`, `amount`,`phone`,`address`) VALUES (?, ?, ?, ?, ?, ?, ?)";
                                         //use this line of code for mysql in xamp "jdbc:mysql://127.0.0.1:3306/user_registeration_database","root",""
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/niit_app","root","Kenny4640");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/niit_app","root","123456");
             pst = con.prepareStatement(query);
             pst.setString(1, firstname.getText());
             pst.setString(2, lastname.getText());
